@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import FullName from './Components/Profile/FullName';
+import Adress from './Components/Profile/Adress';
+import ProfilePhoto from './Components/Profile/ProfilePhoto'
+import Autumn from './Components/Profile/autumn.jpg';
+import Facebook from './Components/Profile/facebook.png';
+import Youtube from './Components/Profile/youtube.png';
+import Github from './Components/Profile/github.png';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <img src={Autumn}/>
+    <ProfilePhoto/>
+    <FullName/>
+    <Adress/>
+    <div className= "social">
+    <a href="https://facebook.com/"><img  className="media"src = {Facebook}/></a>
+    <a href="https://github.com/"><img className="media"src = {Github}/></a>
+    <a href="https://www.youtube.com/"><img className="media"src= {Youtube}/></a>
+   
     </div>
+   
+      
+    </div>
+    
   );
 }
 
